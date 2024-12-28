@@ -629,6 +629,10 @@ video {
   max-width: 28rem;
 }
 
+.cursor-text {
+  cursor: text;
+}
+
 .items-center {
   align-items: center;
 }
@@ -735,6 +739,11 @@ video {
 .py-8 {
   padding-top: 2rem;
   padding-bottom: 2rem;
+}
+
+.px-3 {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
 }
 
 .text-center {
