@@ -14,6 +14,7 @@ export default function CustomerForm({ onSubmit }: CustomerFormProps) {
   const [plans, setPlans] = useState<Plan[]>([]);
 
   useEffect(() => {
+    console.log('useEffect is called!!!');
     const fetchPlans = async () => {
       const response = await fetch('/api/plans');
       const data = await response.json();
@@ -23,6 +24,7 @@ export default function CustomerForm({ onSubmit }: CustomerFormProps) {
   }, []);
 
   const handleSubmit = (e: React.FormEvent) => {
+    console.log('handleSubmit is called!!!');
     e.preventDefault();
     onSubmit({
       nickname,

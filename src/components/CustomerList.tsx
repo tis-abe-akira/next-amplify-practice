@@ -7,6 +7,7 @@ interface CustomerListProps {
 }
 
 export default function CustomerList({ customers }: CustomerListProps) {
+  console.log('CustomerList component is rendered!!! :', customers );
   return (
     <div className="mt-8">
       <h2 className="text-lg font-semibold mb-4">顧客一覧</h2>
