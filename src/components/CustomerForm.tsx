@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import { Customer, Plan } from '../types';
+import { mockPlans } from './PlanProvider';
 
 interface CustomerFormProps {
   onSubmit: (customer: Omit<Customer, 'id'>) => void;
@@ -15,10 +16,11 @@ export default function CustomerForm({ onSubmit }: CustomerFormProps) {
 
   useEffect(() => {
     console.log('useEffect is called!!!');
-    const fetchPlans = async () => {
-      const response = await fetch('/api/plans');
-      const data = await response.json();
+    const fetchPlans = () => {
+      // PlanProvider.tsxで提供されるプランのデータを取得
+      const data = mockPlans;
       setPlans(data);
+      //console.log('fetchPlans is called!!! :', data);
     };
     fetchPlans();
   }, []);
