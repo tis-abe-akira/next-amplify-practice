@@ -6,7 +6,7 @@ import CustomerForm from "../components/CustomerForm";
 import CustomerList from "../components/CustomerList";
 import { Customer } from "../types";
 import { Amplify } from "aws-amplify";
-import outputs from "../../amplify_outputs.json";
+import outputs from "amplify_outputs.json";
 import { Authenticator } from "@aws-amplify/ui-react";
 import "@aws-amplify/ui-react/styles.css";
 
