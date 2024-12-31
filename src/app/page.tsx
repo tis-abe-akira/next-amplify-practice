@@ -25,7 +25,7 @@ export default function Home() {
 
   return (
     <Authenticator>
-      {({ signOut, user }) => (
+      {({ signOut }) => (
         <main className="container mx-auto py-8 px-4">
           <h1 className="text-2xl font-bold mb-8 text-center">
             顧客管理システム
