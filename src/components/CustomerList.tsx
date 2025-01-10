@@ -10,7 +10,7 @@ export default function CustomerList({ customers }: CustomerListProps) {
   console.log('CustomerList component is rendered!!! :', customers );
   return (
     <div className="mt-8">
-      <h2 className="text-lg font-semibold mb-4">顧客一覧</h2>
+      <h2 className="text-lg font-semibold mb-4">顧客一覧(2025-01-10 16:04)</h2>
       {customers.length === 0 ? (
         <p className="text-gray-500">登録された顧客はいません</p>
       ) : (
